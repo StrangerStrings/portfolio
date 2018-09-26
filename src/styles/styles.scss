@@ -1,0 +1,35 @@
+// Colors
+
+$greyish: lighten(#6A669B,7%);
+$dark:#212942;
+$medium:#403671;
+$light:#6A669B;
+$white:rgb(204, 216, 236);
+
+// --- fonts ---
+//serifs
+@import url('https://fonts.googleapis.com/css?family=Vollkorn:900');  
+//title font
+@import url('https://fonts.googleapis.com/css?family=Kirang+Haerang');
+//clean
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,500,600');
+
+
+
+$title: 'Kirang Haerang';
+
+$serif: 'Vollkorn';         //good
+
+$thin: 'Nunito Sans';   //good-simple
+
+
+@import './basics';
+@import './title';
+
+
+
+
+
+
+
+

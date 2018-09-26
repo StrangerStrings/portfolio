@@ -1,0 +1,87 @@
+html {
+  font-size: 62.5%;
+}
+
+
+body {
+  font-family: $thin, Arial, sans-serif;
+  font-weight: 200;
+  font-size: 1.6rem;
+}
+
+%icon-button {
+  padding: 0;
+  svg {
+    height: 100%;
+    width: 100%;
+    fill: $dark;
+  }
+}
+
+@media(min-width:800px){
+  background-color: $dark;
+}
+
+*{
+  // box-sizing: border-box;
+
+}
+
+.container{
+    width: 50rem !important;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1,h2,h3,h4,h5,h6{
+  margin:0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//scroll bar stuff
+::-webkit-scrollbar {
+    width: 1.2rem;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 3px 9px 9px 3px/ 3px 4px 4px 3px;
+    background-color: $dark;
+    background-clip: padding-box;
+    border-right: 0.6rem solid rgba(0,0,0,0);
+}
+::-webkit-scrollbar-button:end:increment, ::-webkit-scrollbar-button:start:increment  {
+height: 2.2rem;;
+display: block;
+background-color: transparent;
+}
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
