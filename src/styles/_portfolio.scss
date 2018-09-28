@@ -1,0 +1,136 @@
+.portfolio-section{
+    height: 65rem;
+    width: 100vw;
+    background-color: #171717;
+    color: #fbfbfb;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 3.5rem;
+}
+
+
+
+.content-and-arrows{
+    flex: 1 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 4rem;
+    h3{
+        margin-bottom: 2rem;
+        letter-spacing: 0.2rem;
+
+    }
+}
+
+.portfolio-arrow{
+    width: 0; 
+    height: 0; 
+    margin: 0 4rem;
+    cursor: pointer;
+
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+    border-left:45px solid #fbfbfb;
+    &.right{
+        border-left: none;
+        border-right: 45px solid #fbfbfb;
+    }
+    &:hover{
+        border-top-width: 35px;
+    }
+}
+
+
+.portfolio-content{
+    // border-radius: 3.2rem;
+    // border: solid #fbfbfb 0.3rem;
+    // padding: 1rem 3.5rem;
+}
+
+
+
+.gallery-and-info-bit{
+    display:flex;
+}
+
+
+
+
+.gallery-bit{
+    display: inline-block;
+}
+
+.gallery-pic{
+    height: 30rem;
+    width: 40rem;
+    img{
+        border-radius: 1rem;
+        // border: solid 0.2rem #fbfbfb;
+        width:100%;
+    }
+}
+
+.gallery-controls{
+    text-align: center;
+    margin: 1rem;
+}
+
+.gallery-button{
+    display: inline-block;
+    height: 1.9rem;
+    width: 1.9rem;
+    border-radius: 50%;
+    border: solid 0.3rem #fbfbfb;
+    margin: 0 0.7rem;
+    box-sizing: border-box;
+    cursor: pointer;
+    &:hover{
+        border-width: 0.4rem;
+    }
+    &.selected{
+        background-color: #fbfbfb;
+    }
+}
+
+
+
+
+
+
+
+
+.info-bit{
+    display: inline-block;
+    width:40rem;
+    padding: 0.5rem 1rem 0 3.5rem;
+}
+
+.piece-info{
+    overflow: scroll;
+    height: 22.8rem;
+}
+
+.piece-links{
+    a{
+        display: block;
+        &:hover h6{
+            text-decoration: underline;
+        }
+    }
+    h6{
+        display: inline-block;
+        color: #fbfbfb;
+        margin-left:0.5rem;
+        font-weight: 300;
+        line-height: 1.2;
+    }
+}
+
+.link-icon{
+    display: inline-block;
+    height:1.2rem;
+    width: 1.2rem;
+    border-radius: 40%;
+    background-color: #fbfbfb;
+}

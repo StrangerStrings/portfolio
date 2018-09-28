@@ -2,8 +2,7 @@ import React from 'react'
 
 import Icon from './Icon.js'
 
-var saveErrorTimer
-var overwrittenTimer
+var animationTimer
 
 
 class TitleSection extends React.Component {
@@ -12,14 +11,29 @@ class TitleSection extends React.Component {
         
         const infoOpen = ( this.state.openInfos[0] || this.state.openInfos[1] || this.state.openInfos[2] ) ? "info-open" : ""
 
+        const nameRedStyle = this.state.animationOn ? {left: this.state.nameLeft/10 +'rem', top: this.state.nameTop/10+'rem' } : {visibility: 'hidden', left:0, top:0}
+        const nameBlueStyle = this.state.animationOn ? {left: -this.state.nameLeft/10 +'rem', top: -this.state.nameTop/10 +'rem' } : {visibility: 'hidden', left:0, top:0}
+
         return (
             <div className='title-section' >
 
                 <div className={'buffer-1 ' + infoOpen} ></div>
 
                 <div className='name-box' >
-                    <h1>Ben Green</h1>
-                    {!infoOpen && <h3>Junior Developer and Physics Graduate</h3>}
+                    <div className='name-div' >
+                        <h2>Ben Green</h2>
+                        <h1 className='name-red' 
+                            style={nameRedStyle}
+                        >Ben Green</h1>
+                        <h1 className='name-blue' 
+                            style={nameBlueStyle}                        
+                        >Ben Green</h1>
+                        <h1
+                            onMouseEnter={this.nameAnimation}
+                            onMouseLeave={this.stopNameAnimation}
+                        >Ben Green</h1>
+                    </div>
+                    <h4 className={infoOpen} >Junior Developer and Physics Graduate</h4>
                 </div>
 
                 <div className={'buffer-2 ' + infoOpen} 
@@ -39,15 +53,15 @@ class TitleSection extends React.Component {
                 </div>
 
                 <div className='headings' >
-                    <h4 className={this.state.openInfos[0] ? 'info-open' : '' } id='0' onClick={(e)=>{
+                    <h5 className={this.state.openInfos[0] ? 'info-open' : '' } id='0' onClick={(e)=>{
                         this.openCloseInfo(e.target.id)
-                    }}>Life Story</h4>
-                    <h4 className={this.state.openInfos[1] ? 'info-open' : '' } id='1' onClick={(e)=>{
+                    }}>Life Story</h5>
+                    <h5 className={this.state.openInfos[1] ? 'info-open' : '' } id='1' onClick={(e)=>{
                         this.openCloseInfo(e.target.id)
-                    }}>Road of Code</h4>
-                    <h4 className={this.state.openInfos[2] ? 'info-open' : '' } id='2' onClick={(e)=>{
+                    }}>Road of Code</h5>
+                    <h5 className={this.state.openInfos[2] ? 'info-open' : '' } id='2' onClick={(e)=>{
                         this.openCloseInfo(e.target.id)
-                    }}>Acheicments</h4>
+                    }}>Achievements</h5>
                 </div>
 
             </div>
@@ -55,7 +69,12 @@ class TitleSection extends React.Component {
     }
 
     state = {
-        openInfos : [false, false, false]
+        openInfos : [false, false, false],
+        nameLeft: 0,
+        nameTop: 3,
+        nameIncrement: 1,
+        animationStopping: false,
+        animationOn: false
     }
 
     openCloseInfo = (id) => {
@@ -68,6 +87,38 @@ class TitleSection extends React.Component {
             arr[id] = true
             this.setState({openInfos: arr})
         }
+    }
+
+
+    nameAnimation = () => {
+        this.setState({
+            animationOn: true, 
+            animationStopping: false, 
+        })
+        animationTimer = setInterval( ()=>{
+            this.setState((prev)=>({nameLeft: prev.nameLeft + prev.nameIncrement}))
+            let x = this.state.nameLeft
+            let nameTop = ((x-4)^4)*0.5
+            console.log(nameTop)
+
+            this.setState({nameTop})
+
+            if (Math.abs(this.state.nameLeft) > 7 ){
+                this.setState((prev)=>({nameIncrement: prev.nameIncrement*-1}))
+            }
+
+            if(this.state.animationStopping && Math.abs(this.state.nameLeft) < 2 ){
+                console.log('stopping')
+                this.setState({animationOn:false})
+                clearInterval(animationTimer)
+            }
+
+        },150)
+    }
+
+    stopNameAnimation = () => {
+        console.log('mouseout')
+        this.setState({animationStopping: true})
     }
 
 }
