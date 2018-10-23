@@ -1,0 +1,334 @@
+.skills-section{
+    // max-height: 100vh;
+    overflow: hidden;
+    width: 100vw;
+    background-color: #fbfbfb;
+    color: #171717;
+    padding: 2rem 3.5rem;
+}
+
+.skills-container{
+    height: 58rem;
+    width: 85rem;
+    margin: auto;
+    position: relative;
+    > div {
+        position: absolute;
+    }
+}
+
+$transition-time: 0.3s;
+
+.logo{
+    background-color: #171717;
+    // border: solid #171717 0.4rem;
+    border-radius: 50%;
+    transition: background-color $transition-time;
+    svg{
+        width:100%;
+        height: 100%;
+        fill: #fbfbfb;
+        transition: fill $transition-time;
+    }
+    &:hover{
+        background-color: #fbfbfb;
+        // transition: background-color $transition-time*0.7;
+        // border: solid #171717 0.4rem;
+        ~ .profficiency{
+            visibility: visible;
+        }
+        svg{
+            fill: #171717;
+            // transition: fill $transition-time*1.7
+        }
+    }
+
+
+
+    &.ajax{
+        width: 7.8rem;
+        height: 7.8rem;
+        left: 0rem;
+        top: 11.3rem;
+    }
+    &.html{
+        width: 10.3rem;
+        height: 10.3rem;
+        left: 2.3rem;
+        top: 24.4rem;
+    }
+    &.cli{
+        width: 9.3rem;
+        height:  9.3rem;
+        left: 10.7rem;
+        top:  2.3rem;
+    }
+    &.jquery{
+        width: 7.1rem;
+        height:  7.1rem;
+        left: 10.6rem;
+        top:  35.9rem;
+    }
+    &.git{
+        width: 8.8rem;
+        height:  8.8rem;
+        left: 27.9rem;
+        top:  5.5rem;
+    }
+    &.node{
+        width: 9.3rem;
+        height:  9.3rem;
+        left: 17.9rem;
+        top:  28.3rem;
+    }
+    &.react{
+        width: 13rem;
+        height:  13rem;
+        left: 29rem;
+        top:  19rem;
+        fill-rule: evenodd;
+    }
+    &.redux{
+        width: 9.7rem;
+        height:  9.7rem;
+        left: 27.3rem;
+        top:  36rem;
+    }
+    &.vscode{
+        width: 8.3rem;
+        height:  8.3rem;
+        left: 47rem;
+        top:  21.8rem;
+        fill-rule: evenodd;
+    }
+    &.javascript{
+        width: 10.2rem;
+        height:  10.2rem;
+        left: 55.3rem;
+        top:  1.2rem;
+    }
+    &.sass{
+        width: 10.8rem;
+        height:  10.8rem;
+        left: 57.6rem;
+        top:  14.3rem;
+    }
+    &.adobe{
+        width: 10.2rem;
+        height:  10.2rem;
+        left: 56.3rem;
+        top:  31.3rem;
+    }
+    &.chrome{
+        width: 8.6rem;
+        height:  8.6rem;
+        left: 71.4rem;
+        top:  9.8rem;
+    }
+    &.csharp{
+        width: 7.4rem;
+        height:  7.4rem;
+        left: 68.4rem;
+        top:  26.2rem;
+        fill-rule: evenodd;
+    }
+}
+
+
+
+
+
+.icon{
+    border-radius:50%;
+    border: 1.4rem solid #171717;
+    width: 11.1rem;
+    height: 11.1rem;
+    transition: background-color 0.2s, border-width $transition-time;
+    svg{
+        width:100%;
+        height: 100%;
+        transition: fill $transition-time;
+        fill: #171717;
+    }
+    &:hover{
+        background-color: #171717;
+        // border-width: 1.2rem;
+        svg{
+            fill: #fbfbfb;
+        }
+    }
+    &.logic{
+        left: 14.7rem;
+        top:  13.9rem;
+    }
+    &.creativity{
+        left: 39.6rem;
+        top:  32.2rem;
+    }
+    &.communication{
+        left: 40.8rem;
+        top:  7.6rem;
+    }
+}
+
+
+.skill-name{
+    left: 5rem;
+    top: 49.2rem;
+    width: 30rem;
+    text-align: center;
+    h3{
+        display: none;
+        span{
+            font-size: 80%;
+            font-weight: 800;
+        }
+    }
+}
+
+.profficiency{
+    left: 39rem;
+    top: 50.6rem;
+    display: flex;
+    // visibility: hidden;
+    align-items: center;
+    *{
+        display: inline-block;
+    }
+    h4{
+        padding: 0rem 1.5rem 0.2rem 0rem;
+    }
+    div{
+        width: 2rem;
+        height: 2rem;
+        border: 0.4rem solid #171717;
+        border-radius: 50%;
+        margin: 0.2rem;
+        transition: background-color $transition-time*2;
+    }
+}
+
+
+.characteristic{
+    top: 49.2rem;
+    // left: 5rem;
+    width: 100%;
+    div{
+        display: none;
+        align-items: center;
+        justify-content: center;
+        // width: 100%;
+        &.logic h3{
+            margin-left: 9rem; 
+        }
+        &.creativity h3{
+            margin-left: 2rem; 
+            margin-right: 8rem;
+        }
+    }
+    h3,h5{
+        display: inline-block;
+    }
+    h3{
+        // width: 35rem;
+        text-align: center;
+        margin-right: 6rem;
+    }
+    h5{
+        margin-bottom: -0.5rem;
+        font-size:155%;
+        // width: 48rem;
+        text-align: right;
+    }
+}
+
+
+.icon:hover ~ .profficiency{
+    visibility: hidden;
+}
+.icon.logic:hover ~ .characteristic .logic {
+    display: flex;
+}
+.icon.creativity:hover ~ .characteristic .creativity {
+    display: flex;
+}
+.icon.communication:hover ~ .characteristic .communication {
+    display: flex;
+}
+
+
+
+.logo.ajax:hover {
+    ~ .skill-name .ajax{display:block;}
+    ~ .profficiency { .div1, .div2, .div3, .div4, .div5 //, .div6, .div7, .div8, .div9, .div10
+        {background-color: #171717;}}
+}
+.logo.html:hover {
+    ~ .skill-name .html{display:block;}
+    ~ .profficiency { .div1, .div2, .div3, .div4, .div5, .div6, .div7, .div8, .div9, // .div10
+        {background-color: #171717;}}
+}
+.logo.cli:hover {
+    ~ .skill-name .cli{display:block;}
+    ~ .profficiency { .div1, .div2, .div3, .div4, .div5, .div6,// .div7, .div8, .div9, .div10
+        {background-color: #171717;}}
+}
+.logo.jquery:hover {
+    ~ .skill-name .jquery{display:block;}
+    ~ .profficiency { .div1, .div2, .div3, .div4, .div5, .div6, .div7, .div8,// .div9, .div10
+        {background-color: #171717;}}
+}
+.logo.git:hover {
+    ~ .skill-name .git{display:block;}
+    ~ .profficiency { .div1, .div2, .div3, .div4, .div5, .div6,// .div7, .div8, .div9, .div10
+        {background-color: #171717;}}
+}
+.logo.node:hover {
+    ~ .skill-name .node{display:block;}
+    ~ .profficiency { .div1, .div2, .div3, .div4, .div5, //.div6, .div7, .div8, .div9, .div10
+        {background-color: #171717;}}
+}
+.logo.react:hover {
+    ~ .skill-name .react{display:block;}
+    ~ .profficiency { .div1, .div2, .div3, .div4, .div5, .div6, .div7, .div8, .div9, //.div10
+        {background-color: #171717;}}
+}
+.logo.redux:hover {
+    ~ .skill-name .redux{display:block;}
+    ~ .profficiency { .div1, .div2, .div3, .div4, .div5, .div6, .div7, .div8, //.div9, .div10
+        {background-color: #171717;}}
+}
+.logo.vscode:hover {
+    ~ .skill-name .vscode{display:block;}
+    ~ .profficiency { .div1, .div2, .div3, .div4, .div5, .div6, .div7,// .div8, .div9, .div10
+        {background-color: #171717;}}
+}
+.logo.javascript:hover {
+    ~ .skill-name .javascript{display:block;}
+    ~ .profficiency { .div1, .div2, .div3, .div4, .div5, .div6, .div7, .div8, //.div9, .div10
+        {background-color: #171717;}}
+}
+.logo.sass:hover {
+    ~ .skill-name .sass{display:block;}
+    ~ .profficiency { .div1, .div2, .div3, .div4, .div5, .div6, .div7, .div8, .div9, //.div10
+        {background-color: #171717;}}
+}
+.logo.adobe:hover {
+    ~ .skill-name .adobe{display:block;}
+    ~ .profficiency { .div1, .div2, .div3, .div4, .div5, .div6, .div7, .div8,// .div9, .div10
+        {background-color: #171717;}}
+}
+.logo.chrome:hover {
+    ~ .skill-name .chrome{display:block;}
+    ~ .profficiency { .div1, .div2, .div3, .div4, .div5, .div6,// .div7, .div8, .div9, .div10
+        {background-color: #171717;}}
+}
+.logo.csharp:hover {
+    ~ .skill-name .csharp{display:block;}
+    ~ .profficiency { .div1, .div2, .div3, .div4, .div5, //.div6, .div7, .div8, .div9, .div10
+        {background-color: #171717;}}
+}
+
+
+
+

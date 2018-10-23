@@ -12,7 +12,16 @@ $white:rgb(204, 216, 236);
 //title font
 @import url('https://fonts.googleapis.com/css?family=Kirang+Haerang');
 //clean
-@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,500,600');
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,500,600,700,800');
+
+
+@import url('https://fonts.googleapis.com/css?family=Archivo+Black|Archivo:600|Maven+Pro:500|Secular+One');
+
+$name: 'Secular One';
+$name: 'Maven Pro';
+$name: 'Archivo Black';
+$name: 'Archivo';
+$name: 'Nunito Sans';
 
 
 
@@ -27,6 +36,7 @@ $thin: 'Nunito Sans';   //good-simple
 @import './title';
 @import './portfolio';
 @import './skills';
+@import './details';
 
 
 

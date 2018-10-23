@@ -1,5 +1,8 @@
 import React from 'react'
 
+import Icon from './Icon'
+import portfolioData from './portfolioData'
+
 class PortfolioSection extends React.Component {
 
     render() {
@@ -12,11 +15,21 @@ class PortfolioSection extends React.Component {
                 <h2>Portfolio</h2>
 
                 <div className='content-and-arrows'>
-                    <div className='portfolio-arrow right'></div>
+
+                    {this.state.piece > 0 
+                    ? 
+                    <div className='portfolio-arrow' onClick={()=>{
+                        this.setState((prev) => ({piece: prev.piece-1, picture:0}))
+                    }}
+                    ><Icon name='arrowLeft'/></div>
+                    :
+                    <div className='portfolio-arrow'/>
+                    }
+                    
 
                     <div className='portfolio-content'>
 
-                        <h3 className='name-bit'>mayit</h3>
+                        <h3 className='name-bit'>{portfolioData[this.state.piece].title}</h3>
 
                         <div className='gallery-and-info-bit'>
 
@@ -38,19 +51,24 @@ class PortfolioSection extends React.Component {
                             </div>
 
                             <div className='info-bit'>
-                                <div className='piece-info' >There are plenty more fish, and regardless, before i learn to dance and be myself regardless of what gender is dancing around me then my attmepts are likely to be blunt swings into a house of cards. So that is good. And i don't feel at all 'guilty' i didnt try it on with anyone. I find that special place and myself and let the world give me what its got to give. Who knows. This ain't perfect and it won't help me forever but it's a good path I'm on. Maybe thats what this period of going out is, not trying to socialize with everyone, but just to be myself and chill in the public eye.</div>
+                                <div className='piece-info' >
+                                    <p>{portfolioData[this.state.piece].text[0]}</p>
+                                    <br/>
+                                    <p>{portfolioData[this.state.piece].text[1]}</p>
+                                </div>
                                 <div className='piece-links' >
-                                    <a href="">
-                                        <div className='link-icon' ></div>
+                                    <a href={portfolioData[this.state.piece].github}>
+                                        <div className='link-icon' ><Icon name='github'/></div>
                                         <h6>view code repo</h6>
                                     </a>
-                                    <a href="">
-                                        <div className='link-icon' ></div>
-                                        <h6>visit site on heroku</h6>
-                                    </a>
-                                    <a href="">
-                                        <div className='link-icon' ></div>
+                                    { portfolioData[this.state.piece].youtube &&
+                                    <a href={portfolioData[this.state.piece].youtube}>
+                                        <div className='link-icon' ><Icon name='youtube'/></div>
                                         <h6>behind the scenes</h6>
+                                    </a>}
+                                    <a href={portfolioData[this.state.piece].heroku}>
+                                        <div className='link-icon' ><Icon name='visit'/></div>
+                                        <h6>visit site on heroku</h6>
                                     </a>
                                 </div>
                             </div>
@@ -59,7 +77,15 @@ class PortfolioSection extends React.Component {
                         
                     </div>
 
-                    <div className='portfolio-arrow'></div>                
+                    {this.state.piece < 3 
+                    ? 
+                    <div className='portfolio-arrow' onClick={()=>{
+                        this.setState((prev) => ({piece: prev.piece+1, picture:0}))
+                    }}
+                    ><Icon name='arrowRight'/></div>
+                    :
+                    <div className='portfolio-arrow'/>
+                    }              
                 </div>
 
             </div>

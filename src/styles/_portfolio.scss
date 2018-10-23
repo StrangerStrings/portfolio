@@ -1,6 +1,8 @@
 .portfolio-section{
-    height: 65rem;
+    height: 70rem;
     width: 100vw;
+    // min-width: 100rem;
+    overflow: hidden;
     background-color: #171717;
     color: #fbfbfb;
     display: flex;
@@ -24,20 +26,16 @@
 }
 
 .portfolio-arrow{
-    width: 0; 
-    height: 0; 
+    width: 4.5rem; 
+    height: 4.5rem; 
     margin: 0 4rem;
-    cursor: pointer;
-
-    border-top: 30px solid transparent;
-    border-bottom: 30px solid transparent;
-    border-left:45px solid #fbfbfb;
-    &.right{
-        border-left: none;
-        border-right: 45px solid #fbfbfb;
+    svg{
+        cursor: pointer;
+        fill: #fbfbfb;
     }
-    &:hover{
-        border-top-width: 35px;
+    &:hover svg{
+        stroke: #fbfbfb;
+        stroke-width: 0.1rem;
     }
 }
 
@@ -104,24 +102,39 @@
     display: inline-block;
     width:40rem;
     padding: 0.5rem 1rem 0 3.5rem;
+    p{
+        margin: 0;
+        font-size: 103%;
+        font-weight: 300;
+        word-spacing: 0.15rem;
+        line-height: 1.9rem;
+    }
 }
 
 .piece-info{
     overflow: scroll;
-    height: 22.8rem;
+    height: 21rem;
+    margin-bottom: 1.8rem;
 }
 
 .piece-links{
     a{
-        display: block;
+        display: flex;
+        width: 20rem;
+        align-items: center;
+        text-decoration: none;
+        margin-bottom: 0.2rem;
         &:hover h6{
             text-decoration: underline;
+        }
+        &:hover .link-icon{
+            // width: 1.9rem;
         }
     }
     h6{
         display: inline-block;
         color: #fbfbfb;
-        margin-left:0.5rem;
+        margin-left:1rem;
         font-weight: 300;
         line-height: 1.2;
     }
@@ -129,8 +142,9 @@
 
 .link-icon{
     display: inline-block;
-    height:1.2rem;
-    width: 1.2rem;
-    border-radius: 40%;
-    background-color: #fbfbfb;
+    height:1.8rem;
+    width: 1.8rem;
+    svg{
+        fill:#fbfbfb;
+    }
 }

@@ -18,7 +18,6 @@ class TitleSection extends React.Component {
             <div className='title-section' >
 
                 <div className={'buffer-1 ' + infoOpen} ></div>
-
                 <div className='name-box' >
                     <div className='name-div' >
                         <h2>Ben Green</h2>
@@ -45,10 +44,29 @@ class TitleSection extends React.Component {
                 <div className={'main-info ' + infoOpen} >
                     {this.state.openInfos[0] && (<div>
                     {/* {true && (<div> */}
-                        <p>Gandhi
-                            What did Gandhi do? What did he do? He went round and met the people he had to meet. Not just any old fools in parks etc. He went to places where he thought he could learn the things he was trying to learn in life. It’s quite amazing. It’s the one of the greatest thing he did for himself. That and following truth and taking care of his body. But the meetings of the ‘important’ people, that is something different, some strange, requesting letters of invatation. Crazy shit, bold to the point of weirdness with a knowledge of his place and his grovelling that let him off the hook. They were probably all extremely complimentary. Greetings sari lardesh, I have seen your name when looking for the most fresh and inavative software makers in Dehli. I then looked at your work and saw how you do things.. blah blah. It would be my pleasure to come for a couple of days to see how those at the top do the thing that i am trying so hard to learn. If there’s any way i could make myself useful i would aswell. I am not looking for money, i am in Dehli for another month and have been reading Gandhi autobiography; it seems he looked for ‘important’ people wherever he was and made arangments to have at least a short meeting with them. He met who was important to him on life journey, and i wish to do the same, and right now, some top programmers and designers are the people who would be most inspirational to me. 
-                            So he must of said stuff like that, but less jumbled. My head’s jumbled again, i don’t know what with what. But it sure feels crazy. Dreams of being a popstar. That’s what goes through my head, that i’m the greatest rapper ever and if the world hears this stuff then they will freak. Then i go through another mad thing where i kinda get past that and do it for myself and its crazy good and then that feeds inot the big dreams. 
-                            Oh ye.;</p>
+                        <p>The truth, as best I remember it.</p>
+                        <p>I was a quiet and curious kid, shy but with little fear of the world. I was individualisitc and brave, i thought a thing and then did a thing, often oblivious to what was going on around. Throughout school i could seem disinterested but often got the highest marks. Especially in Maths and science, they seemed quite obvious to me. I also enjoyed the subjects where I could make things. I chose Art, music and design technology for GCSEs where i created things i was proud of. Outside of school i liked exploring the mean streets of Bradford, long walks with my family, playstation, football, guitar and fighting with my brother.</p>
+                        <p>I decided to study Physics at university but was quite unsure about it all. I liked working out mind bending problems and the wonder of the unknown. As time passed I grew quite disillusioned with regurgitating facts and plugging in numbers and stopped attending most lectures. In my 3rd year I was on course for a 2:2 or even a 3rd but I worked like a madman for the last two or three months and got all 1sts in my exams, which averaged at a 2:1. It wasn’t the advertized university experience but I certainly developed as a person there and learnt a lot about how to keep myself in the best state for creativity, focus and power. </p>
+                        <p>After, I applied for a few engineering graduate programs but without any conviction. I was unsure what I wanted to do. I had considered coding but thought it impenetrably complicated. All this was compounded by my girlfriend’s visa status. We met in university but her English visa ran out 3 months after graduation. This led to 2 years of following her round the world. First to France and then to Australia where her Masters provided a visa. It made it very hard for me to get any kind of career together. I wrote online for money in France then worked hospitality jobs in Australia but the language barrier and then my tempory visa prevented me from securing real, meaty work. This sounds like an excuse but it is a reason for my.. unimpressive employment history. </p>
+                        <p> I moved back to England in 2016 and got my life some much needed direction. I began tutoring maths and science and took to it like a fish to fish food. I thought briefly about becoming a teacher but knew i wanted to do something fresher, where i was creating new things. As luck would have it one of my student’s parents was starting a new business and said he’d take me on if I completed a coding challange. It was the push I need and I found out that it was easier than I thought, funner than I thought, and that I was quite good at it. His business never materialised but it set me off on this ever-evolving coding rollercoaster.</p>
+                    </div>)}
+                    {this.state.openInfos[1] && (<div>
+                        <p>I started with C#, where every concept and term was new and needed learning. Then i moved onto html and css, eventually making a resume website for a friend. I ventured into the world of javascrit and used jquery to create a interactive onscreen keyboard. This developed into a multi-mode typing game, my first real project. It took many months but was a transformative learning experience.</p>
+                        <p>In the gaps, as well as still tutoring, i completed a free code camp course, with tricky algorithm challenges and creating things like a calculaotr and local weather app. I then decided to specialise in react and bought a series of lectures. After just 2 weeks of learning about npm, webpack, components and state, i made a noughts and crosses and was (pleasently) surprised by this new setups power and usability.</p>
+                        <p>I attempted a genetic algorithm app but failed, then after learning redux I returned and completed it with relative ease. Next I made something purely for myself, a meditation and yoga interval timer. My work flow of design, map, code, style and tweak was growing smoother and i got used to the feeling of stress and confusion giving way to satisfaction and pride. After learning some node i deployed this with heroku. I had created something that i use regularly and makes my life that bit better!</p>
+                        <p>My latest project has been making this portfolio site which i found fairly simple. Though i still have much to learn I believe i have enough skills to succeed in a junior role and learn as i work. I have never focused so much and so consistenly on anything before and i think and hope i may have found a career i will excel in and enjoy.</p>
+                        <p> With this momentum I’ve got then the only way is up. </p>
+                    </div>)}
+                    {this.state.openInfos[2] && (<div>
+                        <ul>
+                            <li><p>Earned a 2:1 Physics degree from the university of York</p></li>
+                            <li><p>Made a typing game, from idea to completion </p></li>
+                            <li><p>Made a customisable interval timer that I actually use</p></li>
+                            <li><p>Travelled Europe on my own, shredding fears on the way</p></li>
+                            <li><p>Earned a good wage as a self-employed maths tutor</p></li>
+                            <li><p>Various creative works </p></li>
+                            <li><p>Others: <br/><span>best in school for uk maths challenge, lived in Australia for a year, <br/> made my own fountain, cut my own hair, did a backwards dive, <br/>broke out of my teenage shyness</span></p></li>
+                        </ul>
                     </div>)}
                 </div>
 
@@ -58,12 +76,19 @@ class TitleSection extends React.Component {
                     }}>Life Story</h5>
                     <h5 className={this.state.openInfos[1] ? 'info-open' : '' } id='1' onClick={(e)=>{
                         this.openCloseInfo(e.target.id)
-                    }}>Road of Code</h5>
+                    }}>Coding Journey</h5>
                     <h5 className={this.state.openInfos[2] ? 'info-open' : '' } id='2' onClick={(e)=>{
                         this.openCloseInfo(e.target.id)
                     }}>Achievements</h5>
                 </div>
 
+                <div className='title-stripes' >
+                    <div className='a' ></div>
+                    <div className='b' ></div>
+                    <div className='c' ></div>
+                    <div className='d' ></div>
+                </div>
+                
             </div>
         )
     }
@@ -120,6 +145,11 @@ class TitleSection extends React.Component {
         console.log('mouseout')
         this.setState({animationStopping: true})
     }
+
+    // componentDidMount(){
+    //     this.nameAnimation()
+    //     setTimeout( this.stopNameAnimation , 400)
+    // }
 
 }
 

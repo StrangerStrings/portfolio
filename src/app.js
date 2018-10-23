@@ -7,20 +7,7 @@ import './styles/styles.scss';
 import TitleSection from './components/TitleSection'
 import PortfolioSection from './components/PortfolioSection'
 import SkillsSection from './components/SkillsSection'
-
-
-
-
-//React-Router paths
-
-
-
-
-
-
-
-
-
+import DetailsSection from './components/DetailsSection'
 
 
 
@@ -28,7 +15,8 @@ const jsx = (
     <div>
         <TitleSection/>
         <PortfolioSection/>
-        {/* <SkillsSection/> */}
+        <SkillsSection/>
+        <DetailsSection/>
     </div>
 )
 
