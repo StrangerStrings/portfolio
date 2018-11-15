@@ -59,12 +59,12 @@ class TitleSection extends React.Component {
                     </div>)}
                     {this.state.openInfos[2] && (<div>
                         <ul>
-                            <li><p>Earned a 2:1 Physics degree from the university of York</p></li>
+                            <li><p>Earned a 2:1 Physics <a href='https://photos.app.goo.gl/eEM3uXKehf5Y2umt5' target='_blank' >degree</a> from the university of York</p></li>
                             <li><p>Made a typing game, from idea to completion </p></li>
                             <li><p>Made a customisable interval timer that I actually use</p></li>
                             <li><p>Travelled Europe on my own, shredding fears on the way</p></li>
                             <li><p>Earned a good wage as a self-employed maths tutor</p></li>
-                            <li><p>Various creative works </p></li>
+                            <li><p>Various creative <a href='https://dropr.com/benclaytongreen' target='_blank' >works</a> </p></li>
                             <li><p>Others: <br/><span>best in school for uk maths challenge, lived in Australia for a year, <br/> made my own fountain, cut my own hair, did a backwards dive, <br/>broke out of my teenage shyness</span></p></li>
                         </ul>
                     </div>)}

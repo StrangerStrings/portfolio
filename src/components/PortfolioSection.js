@@ -57,16 +57,16 @@ class PortfolioSection extends React.Component {
                                     <p>{portfolioData[this.state.piece].text[1]}</p>
                                 </div>
                                 <div className='piece-links' >
-                                    <a href={portfolioData[this.state.piece].github}>
+                                    <a href={portfolioData[this.state.piece].github} target='_blank'>
                                         <div className='link-icon' ><Icon name='github'/></div>
                                         <h6>view code repo</h6>
                                     </a>
                                     { portfolioData[this.state.piece].youtube &&
-                                    <a href={portfolioData[this.state.piece].youtube}>
+                                    <a href={portfolioData[this.state.piece].youtube} target='_blank'>
                                         <div className='link-icon' ><Icon name='youtube'/></div>
                                         <h6>behind the scenes</h6>
                                     </a>}
-                                    <a href={portfolioData[this.state.piece].heroku}>
+                                    <a href={portfolioData[this.state.piece].heroku} target='_blank'>
                                         <div className='link-icon' ><Icon name='visit'/></div>
                                         <h6>visit site on heroku</h6>
                                     </a>
@@ -77,7 +77,7 @@ class PortfolioSection extends React.Component {
                         
                     </div>
 
-                    {this.state.piece < 3 
+                    {this.state.piece < portfolioData.length -1
                     ? 
                     <div className='portfolio-arrow' onClick={()=>{
                         this.setState((prev) => ({piece: prev.piece+1, picture:0}))

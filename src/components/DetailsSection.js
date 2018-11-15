@@ -11,7 +11,7 @@ class SkillsSection extends React.Component {
 
                 <div className='details-div-1' >
                     <h6>benjclaytongreen@gmail.com</h6>
-                    <a href='https://github.com/StrangerStrings' ><h6>github.com/StrangerStrings</h6></a>
+                    <a href='https://github.com/StrangerStrings' target='_blank' ><h6>github.com/StrangerStrings</h6></a>
                 </div>
 
                 <div className='portrait-div' >
