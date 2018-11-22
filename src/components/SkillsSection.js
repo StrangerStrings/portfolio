@@ -35,7 +35,7 @@ class SkillsSection extends React.Component {
                         <div className='skill-name' >
                             <h3 className='ajax' >ajax</h3>
                             <h3 className='html' >html<span>5</span> </h3>
-                            <h3 className='cli' ><span>C.L.I</span></h3>
+                            <h3 className='cli' ><span>CLI</span></h3>
                             <h3 className='jquery' >jquery</h3>
                             <h3 className='git' >git</h3>
                             <h3 className='node' >node.js</h3>

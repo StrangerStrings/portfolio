@@ -78,7 +78,7 @@ class TitleSection extends React.Component {
                     <h5 className={this.state.openInfos[1] ? 'info-open' : '' } id='1' onClick={(e)=>{
                         this.openCloseInfo(e.target.id)
                     }}>Coding Journey</h5>
-                    <h5 className={this.state.openInfos[2] ? 'info-open' : '' } id='2' onClick={(e)=>{
+                    <h5 className={this.state.openInfos[2] ? 'info-open last-heading' : 'last-heading' } id='2' onClick={(e)=>{
                         this.openCloseInfo(e.target.id)
                     }}>Achievements</h5>
                 </div>

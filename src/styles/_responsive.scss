@@ -1,35 +1,276 @@
-@media screen and (min-width: 851px) and (max-width: 1080px) {
+@media screen and (min-width: 1500px) {
     html {
-        font-size: 50%;
-      }
-      body{
-        font-size: 155%;
-      }
+        font-size: 150%;
+    }
 }
 
-@media screen and (min-width: 631px) and (max-width: 850px) {
+@media screen and (max-width: 1080px) {
     html {
-        font-size: 43%;
-      }
-      body{
-         font-size:  160%
-      }
+        font-size: 100%;
+    }
 }
 
-@media screen and (min-width: 400px) and (max-width: 630px) {
+@media screen and (max-width: 850px) {
     html {
-        font-size: 37%;
-      }
-      body{
-          font-size: 200%
-      }
+        font-size: 86%;
+    }
 }
 
-// @media screen and (min-width: 300px) and (max-width: 400px) {
-//     html {
-//         font-size: 12.5%;
-//       }
-//       body{
-//           font-size: 155%
-//       }
-// }
+@media screen and (max-width: 710px) {
+    html {
+        font-size: 75%;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    html {
+        font-size: 64%;
+    }
+
+    .title-stripes{
+        display: none;
+    }
+    .main-info{
+        margin-right: 2rem;
+    }
+}
+
+@media screen and (max-width: 535px) {
+    html {
+        font-size: 77%;
+    }
+    body {
+        font-size: 77%;
+    }
+    p{
+        font-size: 125%;
+    }
+
+    .title-section{ 
+        min-height: 24rem;
+        height: initial;
+    }
+    .main-info{
+        margin-right: 0;
+        padding: 0
+    }
+    .buffer-1{
+        display: none;
+    }
+    .buffer-2{
+        order:2;
+    }
+    .main-info{
+        order:-1;
+        &.info-open{
+            height: 35vh;
+        }
+    }
+    .name-box{
+        order:-2;
+    }
+
+
+
+
+    .portfolio-section{
+        height: 46rem;
+    }
+    .content-and-arrows{
+        padding:0;
+        flex-wrap: wrap;
+        min-width: initial;
+        h3{
+            text-align: center;
+        }
+    }
+    .portfolio-content{
+        order:-1;
+        width: 100%;
+    }
+    .gallery-and-info-bit{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .info-bit{
+        padding: 1rem 0 0 ;
+    }
+    .piece-info{
+        height: 9.5rem;
+        p{
+            font-size: 125%;
+        }
+    }
+    .link-icon{
+        width: 1rem;
+    }
+    h6{
+        font-size: 125% !important;
+    }
+
+
+
+    .details-section{
+        height: 21rem;
+        flex-direction: column;
+    }
+    .details-div-1, .details-div-2{
+        padding:0;
+        text-align: center;
+    }
+    .portrait-div{
+        order: -1;
+        margin-bottom: 1.4rem;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+    .skills-container{
+        width: 23.3rem;
+        height: 47.5rem;
+    }
+
+    .skill-name{
+        left: 4.5rem;
+        top: 41rem;
+    }
+
+    .profficiency{
+        left: 2.3rem;
+        top: 44.2rem;
+    }
+
+    .characteristic{
+        top: 40.6rem;
+        div{
+            flex-direction: column;
+            *{
+                margin: 0.2rem !important;
+            }
+        }
+    }
+
+    .logo{
+
+        &.ajax{
+            top: 0rem;
+            right: 5.65rem;
+            left:initial;
+        }
+        &.html{
+            top: 1.15rem;
+            right: 12.2rem;
+            left:initial;
+        }
+        &.cli{
+            top: 5.35rem;
+            right:  1.15rem;
+            left:initial;
+        }
+        &.jquery{
+            top: 5.3rem;
+            right:  17.95rem;
+            left:initial;
+        }
+        &.git{
+            top: 13.95rem;
+            right:  2.75rem;
+            left:initial;
+        }
+        &.node{
+            top: 8.95rem;
+            right:  14.15rem;
+            left:initial;
+        }
+        &.react{
+            top: 14.5rem;
+            right:  9.5rem;
+            left:initial;
+            fill-rule: evenodd;
+        }
+        &.redux{
+            top: 13.65rem;
+            right:  18rem;
+            left:initial;
+        }
+        &.vscode{
+            top: 23.5rem;
+            right:  10.9rem;
+            left:initial;
+            fill-rule: evenodd;
+        }
+        &.javascript{
+            top: 27.65rem;
+            right:  0.6rem;
+            left:initial;
+        }
+        &.sass{
+            top: 28.8rem;
+            right:  7.15rem;
+            left:initial;
+        }
+        &.adobe{
+            top: 28.15rem;
+            right:  15.65rem;
+            left:initial;
+        }
+        &.chrome{
+            top: 35.7rem;
+            right:  4.9rem;
+            left:initial;
+        }
+        &.csharp{
+            top: 34.2rem;
+            right:  13.1rem;
+            left:initial;
+        }
+    }
+
+    .icon{
+        &.logic{
+            top: 7.35rem;
+            right:  6.95rem;
+            left: initial;
+        }
+        &.creativity{
+            top: 19.8rem;
+            right:  16.1rem;
+            left: initial;
+        }
+        &.communication{
+            top: 20.4rem;
+            right:  3.8rem;
+            left: initial;
+        }
+    }
+
+}
+
+
+@media screen and (max-width: 370px) {
+    html {
+        font-size: 70%;
+    }
+}
+
+@media screen and (max-width: 330px) {
+    html {
+        font-size: 62.5%;
+    }
+}
+
+@media screen and (max-width: 330px) {
+    html {
+        font-size: 55%;
+    }
+}

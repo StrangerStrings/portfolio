@@ -4,12 +4,12 @@
     width: 100vw;
     background-color: #fbfbfb;
     color: #171717;
-    padding: 2rem 3.5rem;
+    padding: 1rem 1.75rem;
 }
 
 .skills-container{
-    height: 58rem;
-    width: 85rem;
+    height: 29rem;
+    width: 42.5rem;
     margin: auto;
     position: relative;
     > div {
@@ -46,90 +46,90 @@ $transition-time: 0.3s;
 
 
     &.ajax{
-        width: 7.8rem;
-        height: 7.8rem;
+        width: 3.9rem;
+        height: 3.9rem;
         left: 0rem;
-        top: 11.3rem;
+        top: 5.65rem;
     }
     &.html{
-        width: 10.3rem;
-        height: 10.3rem;
-        left: 2.3rem;
-        top: 24.4rem;
+        width: 5.15rem;
+        height: 5.15rem;
+        left: 1.15rem;
+        top: 12.2rem;
     }
     &.cli{
-        width: 9.3rem;
-        height:  9.3rem;
-        left: 10.7rem;
-        top:  2.3rem;
+        width: 4.65rem;
+        height:  4.65rem;
+        left: 5.35rem;
+        top:  1.15rem;
     }
     &.jquery{
-        width: 7.1rem;
-        height:  7.1rem;
-        left: 10.6rem;
-        top:  35.9rem;
+        width: 3.55rem;
+        height:  3.55rem;
+        left: 5.3rem;
+        top:  17.95rem;
     }
     &.git{
-        width: 8.8rem;
-        height:  8.8rem;
-        left: 27.9rem;
-        top:  5.5rem;
+        width: 4.4rem;
+        height:  4.4rem;
+        left: 13.95rem;
+        top:  2.75rem;
     }
     &.node{
-        width: 9.3rem;
-        height:  9.3rem;
-        left: 17.9rem;
-        top:  28.3rem;
+        width: 4.65rem;
+        height:  4.65rem;
+        left: 8.95rem;
+        top:  14.15rem;
     }
     &.react{
-        width: 13rem;
-        height:  13rem;
-        left: 29rem;
-        top:  19rem;
+        width: 6.5rem;
+        height:  6.5rem;
+        left: 14.5rem;
+        top:  9.5rem;
         fill-rule: evenodd;
     }
     &.redux{
-        width: 9.7rem;
-        height:  9.7rem;
-        left: 27.3rem;
-        top:  36rem;
+        width: 4.85rem;
+        height:  4.85rem;
+        left: 13.65rem;
+        top:  18rem;
     }
     &.vscode{
-        width: 8.3rem;
-        height:  8.3rem;
-        left: 47rem;
-        top:  21.8rem;
+        width: 4.15rem;
+        height:  4.15rem;
+        left: 23.5rem;
+        top:  10.9rem;
         fill-rule: evenodd;
     }
     &.javascript{
-        width: 10.2rem;
-        height:  10.2rem;
-        left: 55.3rem;
-        top:  1.2rem;
+        width: 5.1rem;
+        height:  5.1rem;
+        left: 27.65rem;
+        top:  0.6rem;
     }
     &.sass{
-        width: 10.8rem;
-        height:  10.8rem;
-        left: 57.6rem;
-        top:  14.3rem;
+        width: 5.4rem;
+        height:  5.4rem;
+        left: 28.8rem;
+        top:  7.15rem;
     }
     &.adobe{
-        width: 10.2rem;
-        height:  10.2rem;
-        left: 56.3rem;
-        top:  31.3rem;
+        width: 5.1rem;
+        height:  5.1rem;
+        left: 28.15rem;
+        top:  15.65rem;
     }
     &.chrome{
-        width: 8.6rem;
-        height:  8.6rem;
-        left: 71.4rem;
-        top:  9.8rem;
+        width: 4.3rem;
+        height:  4.3rem;
+        left: 35.7rem;
+        top:  4.9rem;
     }
     &.csharp{
-        width: 7.4rem;
-        height:  7.4rem;
-        left: 68.4rem;
-        top:  26.2rem;
+        width: 3.7rem;
+        height:  3.7rem;
+        left: 34.2rem;
+        top:  13.1rem;
         fill-rule: evenodd;
     }
 }
@@ -140,9 +140,9 @@ $transition-time: 0.3s;
 
 .icon{
     border-radius:50%;
-    border: 1.4rem solid #171717;
-    width: 11.1rem;
-    height: 11.1rem;
+    border: 0.7rem solid #171717;
+    width: 5.505rem;
+    height: 5.505rem;
     transition: background-color 0.2s, border-width $transition-time;
     svg{
         width:100%;
@@ -158,24 +158,24 @@ $transition-time: 0.3s;
         }
     }
     &.logic{
-        left: 14.7rem;
-        top:  13.9rem;
+        left: 7.35rem;
+        top:  6.95rem;
     }
     &.creativity{
-        left: 39.6rem;
-        top:  32.2rem;
+        left: 19.8rem;
+        top:  16.1rem;
     }
     &.communication{
-        left: 40.8rem;
-        top:  7.6rem;
+        left: 20.4rem;
+        top:  3.8rem;
     }
 }
 
 
 .skill-name{
-    left: 5rem;
-    top: 49.2rem;
-    width: 30rem;
+    left: 2.5rem;
+    top: 24.6rem;
+    width: 15rem;
     text-align: center;
     h3{
         display: none;
@@ -187,8 +187,8 @@ $transition-time: 0.3s;
 }
 
 .profficiency{
-    left: 39rem;
-    top: 50.6rem;
+    left: 19.5rem;
+    top: 25.3rem;
     display: flex;
     // visibility: hidden;
     align-items: center;
@@ -196,21 +196,21 @@ $transition-time: 0.3s;
         display: inline-block;
     }
     h4{
-        padding: 0rem 1.5rem 0.2rem 0rem;
+        padding: 0rem 0.75rem 0.1rem 0rem;
     }
     div{
-        width: 2rem;
-        height: 2rem;
-        border: 0.4rem solid #171717;
+        width: 1rem;
+        height: 1rem;
+        border: 0.2rem solid #171717;
         border-radius: 50%;
-        margin: 0.2rem;
+        margin: 0.1rem;
         transition: background-color $transition-time*2;
     }
 }
 
 
 .characteristic{
-    top: 49.2rem;
+    top: 24.6rem;
     // left: 5rem;
     width: 100%;
     div{
@@ -219,11 +219,11 @@ $transition-time: 0.3s;
         justify-content: center;
         // width: 100%;
         &.logic h3{
-            margin-left: 9rem; 
+            margin-left: 4.5rem; 
         }
         &.creativity h3{
-            margin-left: 2rem; 
-            margin-right: 8rem;
+            margin-left: 1rem; 
+            margin-right: 4rem;
         }
     }
     h3,h5{
@@ -232,10 +232,10 @@ $transition-time: 0.3s;
     h3{
         // width: 35rem;
         text-align: center;
-        margin-right: 6rem;
+        margin-right: 3rem;
     }
     h5{
-        margin-bottom: -0.5rem;
+        margin-bottom: -0.25rem;
         font-size:155%;
         // width: 48rem;
         text-align: right;
@@ -328,6 +328,7 @@ $transition-time: 0.3s;
     ~ .profficiency { .div1, .div2, .div3, .div4, .div5, //.div6, .div7, .div8, .div9, .div10
         {background-color: #171717;}}
 }
+
 
 
 

@@ -1,5 +1,5 @@
 .portfolio-section{
-    height: 70rem;
+    height: 35rem;
     width: 100vw;
     // min-width: 100rem;
     overflow: hidden;
@@ -7,7 +7,7 @@
     color: #fbfbfb;
     display: flex;
     flex-direction: column;
-    padding: 2rem 3.5rem;
+    padding: 1rem 1.75rem;
 }
 
 
@@ -17,23 +17,23 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-bottom: 4rem;
-    min-width: 97rem;
+    padding-bottom: 2rem;
+    min-width: 48.5rem;
     h3{
-        margin-bottom: 2rem;
-        letter-spacing: 0.2rem;
+        margin-bottom: 1rem;
+        letter-spacing: 0.1rem;
 
     }
 }
 
 .portfolio-arrow{
-    width: 4.5rem; 
-    height: 4.5rem; 
+    width: 2.25rem; 
+    height: 2.25rem; 
     &.left{
-        margin-right: 4rem;
+        margin-right: 2rem;
     }
     &.right{
-        margin-left: 4rem;
+        margin-left: 2rem;
     }
     svg{
         cursor: pointer;
@@ -41,7 +41,7 @@
     }
     &:hover svg{
         stroke: #fbfbfb;
-        stroke-width: 0.1rem;
+        stroke-width: 0.05rem;
     }
 }
 
@@ -66,31 +66,31 @@
 }
 
 .gallery-pic{
-    height: 30rem;
-    width: 40rem;
+    height: 15rem;
+    width: 20rem;
     img{
-        border-radius: 1rem;
-        // border: solid 0.2rem #fbfbfb;
+        border-radius: 0.5rem;
+        // border: solid 0.1rem #fbfbfb;
         width:100%;
     }
 }
 
 .gallery-controls{
     text-align: center;
-    margin: 1rem;
+    margin: 0.5rem;
 }
 
 .gallery-button{
     display: inline-block;
-    height: 1.9rem;
-    width: 1.9rem;
+    height: 0.95rem;
+    width: 0.95rem;
     border-radius: 50%;
-    border: solid 0.3rem #fbfbfb;
-    margin: 0 0.7rem;
+    border: solid 0.15rem #fbfbfb;
+    margin: 0 0.35rem;
     box-sizing: border-box;
     cursor: pointer;
     &:hover{
-        border-width: 0.4rem;
+        border-width: 0.2rem;
     }
     &.selected{
         background-color: #fbfbfb;
@@ -106,30 +106,30 @@
 
 .info-bit{
     display: inline-block;
-    width:40rem;
-    padding: 0.5rem 1rem 0 3.5rem;
+    width:20rem;
+    padding: 0.25rem 0.5rem 0 1.75rem;
     p{
         margin: 0;
         font-size: 103%;
         font-weight: 300;
-        word-spacing: 0.15rem;
-        line-height: 1.9rem;
+        word-spacing: 0.075rem;
+        line-height: 0.95rem;
     }
 }
 
 .piece-info{
     overflow: scroll;
-    height: 22rem;
-    margin-bottom: 2.9rem;
+    height: 11rem;
+    margin-bottom: 1.45rem;
 }
 
 .piece-links{
     a{
         display: flex;
-        width: 20rem;
+        width: 10rem;
         align-items: center;
         text-decoration: none;
-        margin-bottom: 0.2rem;
+        margin-bottom: 0.1rem;
         &:hover h6{
             text-decoration: underline;
             // margin-left: 0.9rem;
@@ -141,7 +141,7 @@
     h6{
         display: inline-block;
         color: #fbfbfb;
-        margin-left:1rem;
+        margin-left:0.5rem;
         font-weight: 300;
         line-height: 1.2;
     }
@@ -149,8 +149,8 @@
 
 .link-icon{
     display: inline-block;
-    height:1.8rem;
-    width: 1.8rem;
+    height:0.9rem;
+    width: 0.9rem;
     svg{
         fill:#fbfbfb;
     }
