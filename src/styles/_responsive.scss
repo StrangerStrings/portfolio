@@ -1,0 +1,35 @@
+@media screen and (min-width: 851px) and (max-width: 1080px) {
+    html {
+        font-size: 50%;
+      }
+      body{
+        font-size: 155%;
+      }
+}
+
+@media screen and (min-width: 631px) and (max-width: 850px) {
+    html {
+        font-size: 43%;
+      }
+      body{
+         font-size:  160%
+      }
+}
+
+@media screen and (min-width: 400px) and (max-width: 630px) {
+    html {
+        font-size: 37%;
+      }
+      body{
+          font-size: 200%
+      }
+}
+
+// @media screen and (min-width: 300px) and (max-width: 400px) {
+//     html {
+//         font-size: 12.5%;
+//       }
+//       body{
+//           font-size: 155%
+//       }
+// }
