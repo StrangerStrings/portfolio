@@ -18,12 +18,12 @@ class PortfolioSection extends React.Component {
 
                     {this.state.piece > 0 
                     ? 
-                    <div className='portfolio-arrow' onClick={()=>{
+                    <div className='portfolio-arrow left' onClick={()=>{
                         this.setState((prev) => ({piece: prev.piece-1, picture:0}))
                     }}
                     ><Icon name='arrowLeft'/></div>
                     :
-                    <div className='portfolio-arrow'/>
+                    <div className='portfolio-arrow left'/>
                     }
                     
 
@@ -79,12 +79,12 @@ class PortfolioSection extends React.Component {
 
                     {this.state.piece < portfolioData.length -1
                     ? 
-                    <div className='portfolio-arrow' onClick={()=>{
+                    <div className='portfolio-arrow right' onClick={()=>{
                         this.setState((prev) => ({piece: prev.piece+1, picture:0}))
                     }}
                     ><Icon name='arrowRight'/></div>
                     :
-                    <div className='portfolio-arrow'/>
+                    <div className='portfolio-arrow right'/>
                     }              
                 </div>
 
