@@ -61,10 +61,12 @@
         transition: top 0.15s linear, left 0.15s linear, visibility 0.1s 0.2s;
     }
     .name-red{
-        color: rgba(214, 30, 55, 0.653)
+        color: rgba(214, 30, 55, 0.653);
+        color: rgba(214, 30, 30, 0.653);
     }
     .name-blue{
-        color: rgba(29, 43, 240, 0.541)
+        color: rgba(29, 43, 240, 0.541);
+        color: rgba(21, 100, 226, 0.589);
     }
 }
 
@@ -129,7 +131,8 @@ li p{
     display: block;
     top:0;
     right:0;
-    height: 110%;
+    height: 85vh;
+    min-height: 35rem;
     width: 16.5rem;
     div{
         display: inline-block;

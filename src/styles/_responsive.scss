@@ -8,6 +8,9 @@
     html {
         font-size: 100%;
     }
+    body {
+        font-size: 80%;
+    }
 }
 
 @media screen and (max-width: 850px) {
@@ -47,7 +50,7 @@
     }
 
     .title-section{ 
-        min-height: 24rem;
+        min-height: 16rem;
         height: initial;
     }
     .main-info{
@@ -199,13 +202,13 @@
             fill-rule: evenodd;
         }
         &.redux{
-            top: 13.65rem;
-            right:  18rem;
+            top: 13.55rem;
+            right:  18.7rem;
             left:initial;
         }
         &.vscode{
-            top: 23.5rem;
-            right:  10.9rem;
+            top: 22.85rem;
+            right:  10.45rem;
             left:initial;
             fill-rule: evenodd;
         }
@@ -220,18 +223,23 @@
             left:initial;
         }
         &.adobe{
-            top: 28.15rem;
-            right:  15.65rem;
+            top: 27.95rem;
+            right:  18.6rem;
             left:initial;
         }
         &.chrome{
-            top: 35.7rem;
-            right:  4.9rem;
+            top: 34.5rem;
+            right:  3.7rem;
             left:initial;
         }
         &.csharp{
-            top: 34.2rem;
-            right:  13.1rem;
+            top: 27.7rem;
+            right:  14.4rem;
+            left:initial;
+        }
+        &.responsive{
+            top: 33.35rem;
+            right:  13.8rem;
             left:initial;
         }
     }

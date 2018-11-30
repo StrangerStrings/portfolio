@@ -26,6 +26,7 @@ class SkillsSection extends React.Component {
                         <div className='logo adobe'><Icon name='adobe'/></div>
                         <div className='logo chrome'><Icon name='chrome'/></div>
                         <div className='logo csharp'><Icon name='csharp'/></div>
+                        <div className='logo responsive'><Icon name='responsive'/></div>
 
                         <div className='icon creativity' ><Icon name='creativity'/></div>
                         <div className='icon logic' ><Icon name='logic'/></div>
@@ -47,6 +48,7 @@ class SkillsSection extends React.Component {
                             <h3 className='adobe' >adobe suite</h3>
                             <h3 className='chrome' > dev tools</h3>
                             <h3 className='csharp' >c-sharp</h3>
+                            <h3 className='responsive' >responsive</h3>
                         </div>
 
                         <div className='profficiency'>
